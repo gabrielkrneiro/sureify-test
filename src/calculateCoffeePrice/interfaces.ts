@@ -1,6 +1,10 @@
-import { CoffeeSize, CreamerType, SweetenerType } from "./types";
+import { CoffeeSize, CreamerType, LIST_OF_CURRENCIES, SweetenerType } from "./types";
 
-export interface CoffeeOptions {
+export interface OrderOptions {
+  currency?: LIST_OF_CURRENCIES; 
+}
+
+export interface Coffee {
   size: CoffeeSize;
   creamer: CreamerType;
   sweetener: SweetenerType;

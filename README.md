@@ -51,12 +51,14 @@ import calculateCoffeePrice from './src/calculateCoffeePrice';
 
 const price = calculateCoffeePrice({
   size: 'medium',
-  creamer: 'milk',
+  creamer: 'dairy',
   sweetener: 'sugar',
-  currency: 'USD'
 });
-console.log(price); // e.g., $2.70
+
+console.log(price); // e.g., $1.95
 ```
+
+You have the option to choose a different currency. Although it has to be registered in `CURRENCY_SYMBOL` located in `src/calculateCoffeePrice/constants.ts`
 
 ### Running Tests
 
@@ -76,7 +78,6 @@ Coverage reports will be available in the `coverage/` directory.
 
 ```sh
 npm run prettier
-npm run lint
 ```
 
 ## Contributing
