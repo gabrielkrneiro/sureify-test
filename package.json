@@ -9,7 +9,8 @@
     "prettier": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\" --fix",
     "lint:check": "eslint \"src/**/*.ts\"",
-    "build": "tsc --project tsconfig.json"
+    "build": "tsc --project tsconfig.json",
+    "make-badges": "coverage-badges"
   },
   "ava": {
     "extensions": [
@@ -41,5 +42,8 @@
     "tslib": "^2.8.1",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0"
+  },
+  "dependencies": {
+    "coverage-badges-cli": "^2.1.0"
   }
 }

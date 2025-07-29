@@ -1,5 +1,10 @@
 # Sureify Coffee Price Calculator
 
+[![Sureify test](https://github.com/gabrielkrneiro/sureify-test/actions/workflows/codeql.yml/badge.svg)](https://github.com/gabrielkrneiro/sureify-test/actions/workflows/codeql.yml)
+[![Coverage Status](https://jaywcjlove.github.io/coverage-badges-cli/badges.svg)](https://jaywcjlove.github.io/coverage-badges-cli/lcov-report/)
+[![npm version](https://img.shields.io/npm/v/coverage-badges-cli.svg)](https://www.npmjs.com/package/coverage-badges-cli)
+[![Download NPM](https://img.shields.io/npm/dm/coverage-badges-cli.svg?style=flat)](https://www.npmjs.com/package/coverage-badges-cli/)
+
 A TypeScript project for calculating the price of coffee orders with customizable options such as size, creamer, sweetener, and currency formatting.
 
 ## Features

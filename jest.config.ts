@@ -49,7 +49,9 @@ const config: Config = {
     "json",
     "text",
     "lcov",
-    "clover"
+    "clover",
+    "cobertura",
+    "json-summary"
   ],
 
   // An object that configures minimum threshold enforcement for coverage results
