@@ -1,6 +1,5 @@
 # Coffee Price Calculator
 
-[![Coffee Price Calculator](https://github.com/gabrielkrneiro/sureify-test/actions/workflows/codeql.yml/badge.svg)](https://github.com/gabrielkrneiro/sureify-test/actions/workflows/codeql.yml)
 [![Coverage Status](https://gabrielkrneiro.github.io/sureify-test/badges/badges.svg)](https://gabrielkrneiro.github.io/sureify-test/badges/badges.svg)
 
 A TypeScript project for calculating the price of coffee orders with customizable options such as size, creamer, sweetener, and currency formatting.
