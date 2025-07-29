@@ -14,4 +14,24 @@ describe('calculateCoffeePrice', () => {
 
     expect(results).toBe('$1.95');
   });
+
+  it('should return $1.00 for coffee without any dairy, small size and no sugar', () => {
+    const results = calculateCoffeePrice({
+      creamer: 'none',
+      size: 'small',
+      sweetener: 'none',
+    });
+
+    expect(results).toBe('$1.00');
+  });
+
+  it('should return $3.00 for coffee with non-dairy, large size and alternative sugar', () => {
+    const results = calculateCoffeePrice({
+      creamer: 'non-dairy',
+      size: 'large',
+      sweetener: 'sugar alternative',
+    });
+
+    expect(results).toBe('$3.00');
+  });
 });
