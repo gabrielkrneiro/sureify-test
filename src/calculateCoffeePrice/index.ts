@@ -1,3 +1,3 @@
-import calculateCoffeePrice from "./calculateCoffePrice";
+import calculateCoffeePrice from './calculateCoffePrice';
 
-export default calculateCoffeePrice
+export default calculateCoffeePrice;

@@ -1,6 +1,6 @@
-import { CREAMER_PRICES, SIZE_PRICES, SWEETENER_PRICES } from "./constants";
-import { formatPrice } from "./helpers";
-import { Coffee, OrderOptions } from "./interfaces";
+import { CREAMER_PRICES, SIZE_PRICES, SWEETENER_PRICES } from './constants';
+import { formatPrice } from './helpers';
+import { Coffee, OrderOptions } from './interfaces';
 
 /**
  * Calculates the total price of a coffee based on size, creamer, and sweetener.
