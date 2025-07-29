@@ -31,13 +31,34 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests and generate coverage
+        run: npm run test:coverage
+
+      - name: Generate badges
+        run: npm run make-badges
+
+      - name: Copy badges into coverage report
+        run: |
+          mkdir -p coverage/lcov-report/badges
+          cp -r coverage/badges.svg coverage/lcov-report/badges/
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+
+      - name: Upload coverage report (with badges)
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: 'coverage/lcov-report'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

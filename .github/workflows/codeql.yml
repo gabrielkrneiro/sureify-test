@@ -93,11 +93,18 @@ jobs:
           output: coverage/badges.svg
           jsonPath: totals.percent_covered
 
-      - name: Deploy
-        uses: gabrielkrneiro/actions-gh-pages
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+      - name: Build project
+        run: |
+          # Example for building a JavaScript project
+          npm install
+          npm run build
+          echo $(ls -la)
+
+      # - name: Deploy
+      #   uses: gabrielkrneiro/sureify-test
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./dist
 
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3
